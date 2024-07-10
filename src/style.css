@@ -61,8 +61,8 @@ header {
   display: flex;
 }
 .app-icon {
-  font-size: 48px;
-  margin-top: 25px;
+  width: 88px;
+  height: 88px;
 }
 .app-temperature {
   font-size: 88px;
