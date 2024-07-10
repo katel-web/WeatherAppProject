@@ -22,7 +22,7 @@ function changeCityName(event) {
   let searchFormInput = document.querySelector("#search-form-input");
   //let cityName = document.querySelector("#city-name");
   //cityName.innerHTML = searchFormInput.value;
-  searchCity(searchFormElement.value);
+  searchCity(searchFormInput.value);
 }
 
 let searchFormElement = document.querySelector("#search-form");
