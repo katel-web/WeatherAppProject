@@ -9,10 +9,10 @@ function refreshWeather(response) {
 }
 
 function searchCity(city) {
-  let searchFormInput = document.querySelector("#search-form-input");
-  let cityName = searchFormInput.value;
+  //let searchFormInput = document.querySelector("#search-form-input");
+  //let cityName = searchFormInput.value;
   let apiKey = "8ff30efd06o4d12f7ftb8b44c4ad300b";
-  let apiURL = `https://api.shecodes.io/weather/v1/current?query=${cityName}&key=${apiKey}&units=metric`;
+  let apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   console.log(apiURL);
   axios.get(apiURL).then(refreshWeather);
 }
@@ -27,3 +27,5 @@ function changeCityName(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", changeCityName);
+
+searchCity("Lisbon");
