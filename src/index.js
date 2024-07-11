@@ -24,7 +24,7 @@ function refreshWeather(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"
   class="app-icon"
-  />';
+  />`;
 }
 
 function formatDate(date) {
