@@ -74,7 +74,9 @@ header {
   margin-top: 15px;
 }
 .weather-forecast {
-  //display: flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 .weather-forecast-day {
   color: rgba(39, 33, 66, 0.4);
@@ -94,6 +96,10 @@ header {
   color: #f65282;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 
 footer {
